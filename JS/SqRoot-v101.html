@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>v1.01 Square root by averaging</title>
+    <link rel="icon" href="../images/SSC_SmallLogo-60x81.png" />
+    <meta charset="utf-8" />
+    <script type='text/javascript'>
+        function SqRt() {
+            var number = Number(document.getElementById('txt1').value);
+            var decPlaces = Number(document.getElementById('txt2').value);
+            var minimum = 0;
+            var maximum = number;
+            var middle = (minimum + maximum) / 2;
+            var accuracy = Math.pow(10, (-1 * decPlaces));
+            while (Math.abs((middle * middle) - number) > accuracy) {
+                if (middle * middle > number) {
+                    maximum = middle;
+                } else {
+                    minimum = middle;
+                }
+                middle = (minimum + maximum) / 2;
+            }
+            var rounded = Math.floor(middle / accuracy) * accuracy;
+            document.getElementById('txtResult').value = rounded;
+            document.getElementById('txtIterations').value = "The square root of " + number
+                + " correct to " + decPlaces + " decimal places is " + rounded;
+        }
+    </script>
+</head>
+<body>
+    <h1>v1.01 Square root by trial and error and averaging</h1>
+    Enter the number you want the square root of:
+    <br />
+    <textarea id="txt1" rows="1" cols="20"></textarea><br />
+    <br />
+    Enter the accuracy in number of decimal places:<br />
+    <textarea id="txt2" rows="1" cols="20"></textarea><br />
+    <br />
+    <input type="Button" value="Calculate square root" onclick="SqRt()" /><br />
+    <br />
+    The square root is:<br />
+    <textarea id="txtResult" rows="1" cols="20"></textarea><br />
+    <br />
+    The iterations of this calculation are:<br />
+    <textarea id="txtIterations" rows="20" cols="30"></textarea><br />
+</body>
+</html>
