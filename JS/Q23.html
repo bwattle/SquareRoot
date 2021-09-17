@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>v1.01 Square root by averaging</title>
+    <link rel="icon" href="../images/SSC_SmallLogo-60x81.png" />
+    <meta charset="utf-8" />
+    <script type='text/javascript'>
+        function SqRt() {
+            var number = Number(document.getElementById('txt1').value);
+            var decPlaces = Number(document.getElementById('txt2').value);
+            var minimum = 0;
+            var maximum = number;
+            var middle = (minimum + maximum) / 2;
+            var accuracy = Math.pow(10, (-1 * decPlaces));
+            while (Math.abs((middle * middle) - number) > accuracy) {
+                if (middle * middle > number) {
+                    maximum = middle;
+                } else {
+                    minimum = middle;
+                }
+                middle = (minimum + maximum) / 2;
+            }
+            var rounded = Math.floor(middle / accuracy) * accuracy;
+            document.getElementById('txtResult').value = rounded;
+            document.getElementById('txtIterations').value = "The square root of " + number
+                + " correct to " + decPlaces + " decimal places is " + rounded;
+        }
+    </script>
+</head>
+<body>
+    <h1>Software Design &amp; Development </h1>
+    <h3><a href="../index.html" title="Home" target="_blank">Home</a></h3>
+    <h3>Examination question - Year 11 yearly, 2011 Q23 (Independent schools)</h3>
+    <b><span style="color: #7030A0">The original question was:</span></b><br />
+    <img src="../images/Q23a.png" alt="Image of part (a) of the question"
+        width="735" height="1042" title="Image of part (a) of the question" /><br />
+    <br />
+    <b><span style="color: #7030A0">Another format for desk checks is shown </span></b><a href="#deskChk" title="Jump to alternative desk check">below</a>:<br />
+    <img src="../images/Q23b.png" alt="Image of part (b) of the question"
+        width="735" height="1029" title="Image of part (b) of the question" /><br />
+    <img src="../images/Q23cd.png" alt="Image of parts (c) and (d) of the question"
+        width="736" height="842" title="Image of parts (c) and (d) of the question" /><br />
+    <br />
+    <b><span style="color: #7030A0">Alternative desk check format - EASIER IN EXAMS as there is no need to write out the commands:</span></b>
+    <a id="deskChk"></a>
+    <img src="../images/Q23deskcheck2dec1.png" alt="Image of desk check for square root of 2, accurate to 1 decimal place"
+        width="971" height="562" title="Image of desk check" /><br /><br />
+    <img src="../images/Q23deskcheck9dec0.png" alt="Image of desk check for square root of 9, accurate to 0 decimal places"
+        width="971" height="562" title="Image of desk check" /><br /><br />
+    <a id="deskChk25"></a>
+    <img src="../images/Q23deskcheck25dec0.png" alt="Image of desk check for square root of 25, accurate to the nearest whole number"
+        width="978" height="530" title="Image of desk check" /><br /><br />
+    <br />
+</body>
+</html>
