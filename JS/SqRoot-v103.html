@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>v1.01 Square root by averaging</title>
+    <title>v1.03 Square root by averaging</title>
     <link rel="icon" href="../images/SSC_SmallLogo-60x81.png" />
     <meta charset="utf-8" />
     <script type='text/javascript'>
@@ -12,6 +12,8 @@
             var maximum = number;
             var middle = (minimum + maximum) / 2;
             var accuracy = Math.pow(10, (-1 * decPlaces));
+            var loopNum = 1;
+            var strLoopTotals = "Loop 1, middle = " + middle;
             while (Math.abs((middle * middle) - number) > accuracy) {
                 if (middle * middle > number) {
                     maximum = middle;
@@ -19,18 +21,22 @@
                     minimum = middle;
                 }
                 middle = (minimum + maximum) / 2;
+                loopNum = loopNum + 1;
+                strLoopTotals = strLoopTotals + "\nLoop " + loopNum + ", middle = " + middle;
             }
             var rounded = Math.floor(middle / accuracy) * accuracy;
             document.getElementById('txtResult').value = rounded;
             document.getElementById('txtIterations').value = "The square root of " + number
-                + " correct to " + decPlaces + " decimal places is " + rounded;
+                + " correct to " + decPlaces + " decimal places is " + rounded + "\n" + strLoopTotals;
         }
     </script>
 </head>
 <body>
     <h1>Square root by trial and error and averaging</h1>
     <h3><a href="JS/Q23.html" title="Link to question" target="_blank">Click to see the question</a></h3>
-    <h3>v1.01 A base version with no frills.</h3>
+    <h3>v1.03 This version uses a rounding function to avoid the trailing decimals.</h3>
+    <b><span style="color: red">Version under development! </span></b>
+    <br />
     <br />
     Enter the number you want the square root of:
     <br />
@@ -45,6 +51,6 @@
     <textarea id="txtResult" rows="1" cols="20"></textarea><br />
     <br />
     The iterations of this calculation are:<br />
-    <textarea id="txtIterations" rows="20" cols="30"></textarea><br />
+    <textarea id="txtIterations" rows="30" cols="50"></textarea><br />
 </body>
 </html>
