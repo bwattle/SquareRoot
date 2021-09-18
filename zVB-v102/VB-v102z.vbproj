@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9126ECFE-AF06-4331-A743-C88B52795257}</ProjectGuid>
+    <ProjectGuid>{3AC528DB-F9AD-4887-9644-E7D40DBB0454}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>SqRoot102.My.MyApplication</StartupObject>
-    <RootNamespace>SqRoot102</RootNamespace>
-    <AssemblyName>SqRoot102</AssemblyName>
+    <StartupObject>SqRoot101.My.MyApplication</StartupObject>
+    <RootNamespace>SqRoot101</RootNamespace>
+    <AssemblyName>SqRoot101</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>SqRoot102.xml</DocumentationFile>
+    <DocumentationFile>SqRoot101.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>SqRoot102.xml</DocumentationFile>
+    <DocumentationFile>SqRoot101.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -72,11 +72,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SqRoot102.vb">
+    <Compile Include="SqRoot101.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SqRoot102.Designer.vb">
-      <DependentUpon>SqRoot102.vb</DependentUpon>
+    <Compile Include="SqRoot101.Designer.vb">
+      <DependentUpon>SqRoot101.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,8 +97,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="SqRoot102.resx">
-      <DependentUpon>SqRoot102.vb</DependentUpon>
+    <EmbeddedResource Include="SqRoot101.resx">
+      <DependentUpon>SqRoot101.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

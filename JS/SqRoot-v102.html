@@ -6,8 +6,8 @@
     <meta charset="utf-8" />
     <script type='text/javascript'>
         function SqRt() {
-            var number = Number(document.getElementById('txt1').value);
-            var decPlaces = Number(document.getElementById('txt2').value);
+            var number = Number(document.getElementById('txt1')["value"]);
+            var decPlaces = Number(document.getElementById('txt2')["value"]);
             var minimum = 0;
             var maximum = number;
             var middle = (minimum + maximum) / 2;
@@ -24,10 +24,10 @@
                 loopNum = loopNum + 1;
                 strLoopTotals = strLoopTotals + "\nLoop " + loopNum + ", middle = " + middle;
             }
-            var rounded = Math.floor(middle / accuracy) * accuracy;
-            document.getElementById('txtResult').value = rounded;
-            document.getElementById('txtIterations').value = "The square root of " + number
-                + " correct to " + decPlaces + " decimal places is " + rounded + "\n" + strLoopTotals;
+            middle = Math.floor(middle / accuracy) * accuracy;
+            document.getElementById('txtResult')["value"] = middle;
+            document.getElementById('txtIterations')["value"] = "The square root of " + number
+                + " correct to " + decPlaces + " decimal places is " + middle + "\n" + strLoopTotals;
         }
     </script>
 </head>

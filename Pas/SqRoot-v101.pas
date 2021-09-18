@@ -8,6 +8,7 @@ Var
   middle : Real;
   accuracy : Real;
   rounded : Real;
+  strLoopTotals: String ;
 Begin
   Writeln('Enter the number you want the square root of: ');
   Readln(number);
@@ -25,12 +26,12 @@ Begin
         End
       Else
         Begin
-          minimum := middle
+          minimum := middle;
         End;
-      middle := (minimum + maximum) / 2
+      middle := (minimum + maximum) / 2;
     End;
-  rounded := Int(middle / accuracy) * accuracy ;            
-  Writeln('The unformatted square root is ', rounded);                        
-  {at the end of the next line, 0 is minimum total digits: decPlaces is what it says}
+  rounded := Int(middle / accuracy) * accuracy ;
+  Writeln('The unformatted square root is ', rounded);
+ {at the end of the next line, 0 is minimum total digits: decPlaces is what it says}
   Writeln('The formatted square root is ', rounded:0:decPlaces);
 End .

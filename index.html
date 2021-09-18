@@ -8,7 +8,6 @@
     <style type="text/css">
         body {
             background-color: rgb(220,250,236);
-            light green
         }
 
         table {
@@ -43,7 +42,8 @@
         <li>errors with floating point decimals</li>
         <li>string concatenation with carriage returns and line breaks (v1.02)</li>
         <li>different rounding functions (v1.03)</li>
-        <li></li>
+        <li><span style="color: red">infinite loop</span> (runtime error) - caused with more than 6 decimal places, VB and Pascal. 16 decimal places for JS and Python (double precision)</li>
+        <li>validation errors</li>
     </ul>
     <br />
     <table>
@@ -63,7 +63,9 @@
         </tr>
         <tr>
             <td colspan="4">v1.01
-                Iteration values are NOT shown in this initial version. Floating point errors sometimes cause many trailing decimals with a small error.</td>
+                Iteration values are NOT shown in this initial version. 
+                Floating point errors sometimes cause many trailing decimals with a small error. 
+                <span style="color: red">All versions can be thrown into an infinite loop </span>with &quot;decPlaces&quot; &gt;16.</td>
         </tr>
         <tr>
             <td>.html file <a href="JS/SqRoot-v101.html" title="JS v1.01" target="_blank">v1.01</a>
@@ -77,40 +79,48 @@
             </td>
             <td>pas.exe file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.01-Pas/SqRoot-v101.exe"
                 title="v1.01 Pascal exe" target="_blank">v1.01</a><br />
-                code <a href="https://github.com/bwattle/SquareRoot/blob/master/Pas/SqRoor-v101.pas"
+                code <a href="https://github.com/bwattle/SquareRoot/blob/master/Pas/SqRoot-v101.pas"
                     title="v1.01 Pascal code online" target="_blank">v1.01</a>
-            </td>
+                <br />
+                Declarations on separate lines</td>
             <td>vb.exe file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.01-VB/SqRoot101.exe"
                 title="v1.01 VB exe" target="_blank">v1.01</a>
                 <br />
                 code <a href="https://github.com/bwattle/SquareRoot/blob/master/VB-v101/SqRoot101.vb"
                     title="v1.01 VB code online" target="_blank">v1.01</a>
-            </td>
+                <br />
+                Declarations on separate lines</td>
         </tr>
         <tr>
-            <td colspan="4">v1.02 The value of &quot;middle&quot; in each loop is shown for testing. Floating point errors still exist.</td>
+            <td colspan="4">v1.02 The iterations of the value, &quot;middle&quot; are shown for testing. Floating point errors still exist.</td>
         </tr>
         <tr>
             <td>.html file <a href="JS/SqRoot-v102.html" title="JS v1.02" target="_blank">v1.02</a>
                 <br />
+                Line break in concatenation<br />
             </td>
-            <td>.py file <a href="JS/UnderConstruction.html"
+            <td>.py file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.02-Py/SqRoot-102.py"
                 title="v1.02 Python file" target="_blank">v1.02</a>
                 <br />
-                code <a href="JS/UnderConstruction.html"
-                    title="v1.02 Python code online" target="_blank">v1.02</a>
+                code <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.02-Py/SqRoot-102.py"
+                    title="https://github.com/bwattle/SquareRoot/blob/master/Py/SqRoot-102.py" target="_blank">v1.02</a><br />
+                Used compound assignment (+=)<br />
             </td>
             <td>pas.exe file <a href="JS/UnderConstruction.html"
                 title="v1.02 Pascal exe" target="_blank">v1.02</a><br />
-                code <a href="JS/UnderConstruction.html"
+                code <a href="https://github.com/bwattle/SquareRoot/blob/master/Pas/SqRoot-v101.pas"
                     title="v1.02 Pascal code online" target="_blank">v1.02</a>
-            </td>
-            <td>vb.exe file <a href="JS/UnderConstruction.html"
+                <br />
+                Declarations on one line</td>
+            <td>vb.exe file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.02-VB/SqRoot102.exe"
                 title="v1.02 VB exe" target="_blank">v1.02</a>
                 <br />
-                code <a href="JS/UnderConstruction.html"
+                code <a href="https://github.com/bwattle/SquareRoot/blob/master/VB-v102/SqRoot102.vb"
                     title="v1.02 VB code online" target="_blank">v1.02</a>
-            </td>
+                <br />
+                <span style="color: red">Infinite loop with decPlaces=7</span> <br />
+                Declarations on one line.<br />
+                Used compound assignment (+=)</td>
         </tr>
         <tr>
             <td colspan="4">v1.03 This is still under construction .....</td>

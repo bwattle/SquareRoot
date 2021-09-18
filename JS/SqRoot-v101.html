@@ -5,9 +5,9 @@
     <link rel="icon" href="../images/SSC_SmallLogo-60x81.png" />
     <meta charset="utf-8" />
     <script type='text/javascript'>
-        function SqRt() {
-            var number = Number(document.getElementById('txt1').value);
-            var decPlaces = Number(document.getElementById('txt2').value);
+        function SqRoot() {
+            var number = Number(document.getElementById('txt1')["value"]);
+            var decPlaces = Number(document.getElementById('txt2')["value"]);
             var minimum = 0;
             var maximum = number;
             var middle = (minimum + maximum) / 2;
@@ -21,8 +21,8 @@
                 middle = (minimum + maximum) / 2;
             }
             var rounded = Math.floor(middle / accuracy) * accuracy;
-            document.getElementById('txtResult').value = rounded;
-            document.getElementById('txtIterations').value = "The square root of " + number
+            document.getElementById('txtResult')["value"] = rounded;
+            document.getElementById('txtIterations')["value"] = "The square root of " + number
                 + " correct to " + decPlaces + " decimal places is " + rounded;
         }
     </script>
@@ -39,7 +39,7 @@
     Enter the accuracy in number of decimal places:<br />
     <textarea id="txt2" rows="1" cols="20"></textarea><br />
     <br />
-    <input type="Button" value="Calculate square root" onclick="SqRt()" /><br />
+    <input type="Button" value="Calculate square root" onclick="SqRoot()" /><br />
     <br />
     The square root is:<br />
     <textarea id="txtResult" rows="1" cols="20"></textarea><br />
