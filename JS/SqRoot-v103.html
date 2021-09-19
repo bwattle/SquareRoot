@@ -12,7 +12,7 @@
             var maximum = number;
             var middle = (minimum + maximum) / 2;
             var accuracy = Math.pow(10, (-1 * decPlaces));
-            var loopNum = 1;
+            var loopNum = 0;
             var strLoopTotals = "Loop 1, middle = " + middle;
             while (Math.abs((middle * middle) - number) > accuracy) {
                 if (middle * middle > number) {
@@ -52,6 +52,6 @@
     <textarea id="txtResult" rows="1" cols="20"></textarea><br />
     <br />
     The iterations of this calculation are:<br />
-    <textarea id="txtIterations" rows="30" cols="50"></textarea><br />
+    <textarea id="txtIterations" rows="30" cols="70"></textarea><br />
 </body>
 </html>

@@ -15,7 +15,7 @@
         maximum = number
         middle = (minimum + maximum) / 2
         accuracy = 10 ^ (-1 * decPlaces)
-        loopNum = 1
+        loopNum = 0
         strLoopTotals = "Loop 1, middle = " & middle
         While Math.Abs((middle * middle) - number) > accuracy
             If middle * middle > number Then
