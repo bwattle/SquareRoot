@@ -1,4 +1,5 @@
 ﻿Public Class SqRoot101
+    '15/9/21 Nev Goodyer: created from pseudo at https://bwattle.github.io/SquareRoot/JS/Q23.html
     Private Sub BtnRoot_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
         Dim number As Single
         Dim decPlaces As Int16

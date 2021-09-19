@@ -1,4 +1,5 @@
 ﻿Public Class SqRoot102
+    '15/9/21 Nev Goodyer: created from pseudo at https://bwattle.github.io/SquareRoot/JS/Q23.html
     '19/9/21 Note the use of the "Byte" data type for "decPlaces" and infinite loops vary in severity 
     'depending on whether "loopNum" is 16 or 32 bit. (16 bit is approx 32,000. 32 bit approx 2 billion)
     'If the "restricted zone" error appears, see link below. None of these fixed it for me, but re-starting the computer did.:
