@@ -33,8 +33,7 @@
     <br />
     <br />
     A Visual Studio (VS) ZIP file with all 3 languages, prior to the GitHub upload, is at: <a
-        href="https://github.com/bwattle/Add3_JS-Pas-Py-VB-VBA/releases/download/v1.00/_Add3_JS-Pas-Py-VB-VBA.zip">Release v1.00</a>
-    <br />
+        href="https://github.com/bwattle/Add3_JS-Pas-Py-VB-VBA/releases/download/v1.00/_Add3_JS-Pas-Py-VB-VBA.zip">Release v1.00</a><br />
     <br />
     This is an interesting problem as it covers:
     <ul>
@@ -43,10 +42,25 @@
         <li>string concatenation with carriage returns and line breaks (v1.02)</li>
         <li>different rounding functions (v1.03)</li>
         <li><span style="color: red">infinite loop</span> (runtime error) - caused with more than 6 decimal places, VB and Pascal. 16 decimal places for JS and Python (double precision)</li>
+        <li>specific declarations of &quot;single&quot; or &quot;double&quot; can be done specifically in Pascal and VB
+            <ul>
+                <li>Pascal: <a href="https://wiki.freepascal.org/IEEE_754_formats">https://wiki.freepascal.org/IEEE_754_formats</a> </li>
+                <li>VB: <a href="https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/data-types/">https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/data-types/</a> </li>
+            </ul>
+        </li>
+        <li>declarations of &quot;byte&quot;, &quot;Int16&quot;, &quot;Int32&quot; and &quot;Integer&quot; can be done in VB</li>
         <li>validation errors</li>
     </ul>
     <br />
     <table>
+        <tr>
+            <td colspan="2">
+                <h2>Interprative languages</h2>
+            </td>
+            <td colspan="2">
+                <h2>Compiling languages</h2>
+            </td>
+        </tr>
         <tr>
             <td>
                 <h4>JS</h4>
@@ -77,22 +91,23 @@
                 code <a href="https://github.com/bwattle/SquareRoot/blob/master/Py/SqRoot-101.py"
                     title="v1.01 Python code online" target="_blank">v1.01</a>
             </td>
-            <td>pas.exe file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.01-Pas/SqRoot-v101.exe"
+            <td>pas.exe file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.01-Pas/SqRoot-Pas-v101.exe"
                 title="v1.01 Pascal exe" target="_blank">v1.01</a><br />
+                zip of exe file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.01-Pas/SqRoot-Pas-v101.zip"
+                title="v1.01 Pascal exe" target="_blank">v1.01</a><br />
+                Declarations on separate lines<br />
                 code <a href="https://github.com/bwattle/SquareRoot/blob/master/Pas/SqRoot-v101.pas"
-                    title="v1.01 Pascal code online" target="_blank">v1.01</a>
-                <br />
-                Declarations on separate lines</td>
+                    title="v1.01 Pascal code online" target="_blank">v1.01</a> </td>
             <td>vb.exe file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.01-VB/SqRoot101.exe"
                 title="v1.01 VB exe" target="_blank">v1.01</a>
                 <br />
+                Declarations on separate lines<br />
                 code <a href="https://github.com/bwattle/SquareRoot/blob/master/VB-v101/SqRoot101.vb"
                     title="v1.01 VB code online" target="_blank">v1.01</a>
-                <br />
-                Declarations on separate lines</td>
+                </td>
         </tr>
         <tr>
-            <td colspan="4">v1.02 The iterations of the value, &quot;middle&quot; are shown for testing. Floating point errors still exist.</td>
+            <td colspan="4">v1.02 The iterations of the value, &quot;middle&quot; are shown for testing. Floating point errors still exist, leading to the infinite loops.</td>
         </tr>
         <tr>
             <td>.html file <a href="JS/SqRoot-v102.html" title="JS v1.02" target="_blank">v1.02</a>
@@ -102,25 +117,30 @@
             <td>.py file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.02-Py/SqRoot-102.py"
                 title="v1.02 Python file" target="_blank">v1.02</a>
                 <br />
+                Used compound assignment (+=)<br />
                 code <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.02-Py/SqRoot-102.py"
                     title="v1.02 Python code online" target="_blank">v1.02</a><br />
-                Used compound assignment (+=)<br />
             </td>
-            <td>pas.exe file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.02-Pas/SqRoot-v102.exe"
+            <td>pas.exe file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.02-Pas/SqRoot-Pas-v102.exe"
                 title="v1.02 Pascal exe" target="_blank">v1.02</a><br />
+                zip of exe file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.02-Pas/SqRoot-Pas-v102.zip"
+                title="v1.01 Pascal exe" target="_blank">v1.02</a><br />
+                Declarations on one line<br />
+                <span style="color: red">Great demo of an infinite loop and 2&#39;s compliment with decPlaces=8</span><br />
+                Declarations on one line.<br />
                 code <a href="https://github.com/bwattle/SquareRoot/blob/master/Pas/SqRoot-v101.pas"
                     title="v1.02 Pascal code online" target="_blank">v1.02</a>
-                <br />
-                Declarations on one line</td>
+            </td>
             <td>vb.exe file <a href="https://github.com/bwattle/SquareRoot/releases/download/v1.02-VB/SqRoot102.exe"
                 title="v1.02 VB exe" target="_blank">v1.02</a>
                 <br />
+                Infinite loop with decPlaces=7
+                <br />
+                Declarations on one line.<br />
+                Used compound assignment (+=)<br />
                 code <a href="https://github.com/bwattle/SquareRoot/blob/master/VB-v102/SqRoot102.vb"
                     title="v1.02 VB code online" target="_blank">v1.02</a>
-                <br />
-                <span style="color: red">Infinite loop with decPlaces=7</span> <br />
-                Declarations on one line.<br />
-                Used compound assignment (+=)</td>
+            </td>
         </tr>
         <tr>
             <td colspan="4">v1.03 This is still under construction .....</td>

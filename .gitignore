@@ -5,6 +5,7 @@
 
 # Pascal EXE files (code files OK)
 Pas/*.exe
+Pas/*.zip
 
 # User-specific files
 *.rsuser
