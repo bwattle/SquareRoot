@@ -13,11 +13,11 @@ Begin
   Writeln('Enter the accuracy in number of decimal places: ');
   Readln(decPlaces);
   minimum := 0 ;
-  maximum := Number ;
+  maximum := number ;
   middle := (minimum + maximum) / 2 ;
   accuracy := Power (10, (-1 * decPlaces)) ;       {needs the "Math" library for "Power" to work}
-  loopNum := 1;
-  Writeln('Loop 1, middle = ' , middle);
+  loopNum := 0;
+  Writeln('Loop 0, middle = ' , middle); 
   While Abs((middle * middle) - number) > accuracy Do
     Begin
       If middle * middle > Number Then

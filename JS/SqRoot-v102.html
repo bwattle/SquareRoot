@@ -9,14 +9,14 @@
     <meta charset="utf-8" />
     <script type='text/javascript'>
         function SqRt() {
-            var number = Number(document.getElementById('txt1')["value"]);
-            var decPlaces = Number(document.getElementById('txt2')["value"]);
+            var number = Number(document.getElementById('txt1').innerHTML);
+            var decPlaces = Number(document.getElementById('txt2').innerHTML);
             var minimum = 0;
             var maximum = number;
             var middle = (minimum + maximum) / 2;
             var accuracy = Math.pow(10, (-1 * decPlaces));
             var loopNum = 0;
-            var strLoopTotals = "Loop 1, middle = " + middle;
+            var strLoopTotals = "Loop 0, middle = " + middle;
             while (Math.abs((middle * middle) - number) > accuracy) {
                 if (middle * middle > number) {
                     maximum = middle;
@@ -28,8 +28,8 @@
                 strLoopTotals = strLoopTotals + "\nLoop " + loopNum + ", middle = " + middle;
             }
             middle = Math.floor(middle / accuracy) * accuracy;
-            document.getElementById('txtResult')["value"] = middle;
-            document.getElementById('txtIterations')["value"] = "The square root of " + number
+            document.getElementById('txtResult').innerHTML = middle;
+            document.getElementById('txtIterations').innerHTML = "The square root of " + number
                 + " correct to " + decPlaces + " decimal places is " + middle + "\n" + strLoopTotals;
         }
     </script>
@@ -54,6 +54,6 @@
     <b><span style="color: red">If there are extra decimal places, it's because floating point decimals are NOT exact! </span></b><br />    
     <br />
     The iterations of this calculation are:<br />
-    <textarea id="txtIterations" rows="30" cols="70"></textarea><br />
+    <textarea id="txtIterations" rows="30" cols="85"></textarea><br />
 </body>
 </html>
