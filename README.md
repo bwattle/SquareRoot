@@ -22,4 +22,4 @@ https://github.com/bwattle/arrRecords/releases/download/v0.13-Word/ArrRec-03-Run
 
 5.  v0.14 Doc - Running Pascal files with Pascal XE
 https://github.com/bwattle/arrRecords/releases/download/v0.14-Word/ArrRec-04-RunningPascalFiles.docx
-![image](https://user-images.githubusercontent.com/45184841/134661105-2c50c401-227c-42f4-bd55-959786bb880d.png)
+
