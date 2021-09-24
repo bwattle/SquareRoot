@@ -3,28 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SqRoot_JS-Pas-Py-VB", ".", "{459FC14B-8AFC-446E-B7C8-1F2294B5A2E6}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_60732"
-		Debug.AspNetCompiler.PhysicalPath = "..\SqRoot_JS-Pas-Py-VB\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60732\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_60732"
-		Release.AspNetCompiler.PhysicalPath = "..\SqRoot_JS-Pas-Py-VB\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60732\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "60732"
-		SlnRelativePath = "..\SqRoot_JS-Pas-Py-VB\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Py", "Py\Py.pyproj", "{58DF04CC-AC8E-40AB-A6E5-00FF983EEE65}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VB-v101", "VB-v101\VB-v101.vbproj", "{B7D3EE14-60A3-4419-B712-F1A67EDD314B}"
@@ -33,16 +11,47 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VB-v102", "VB-v102\VB-v102.
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VB-v103", "VB-v103\VB-v103.vbproj", "{5E576803-1286-4E77-AB57-D5916B1E4A45}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FilesInRoot", "FilesInRoot", "{56E9446B-E445-4623-BA9A-7A6D05B95746}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		index.html = index.html
+		README.md = README.md
+		Web.config = Web.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pas", "Pas", "{C9980764-6ABB-487E-9BF5-8D78E4969F5B}"
+	ProjectSection(SolutionItems) = preProject
+		Pas\SqRoot-Pas-v101.pas = Pas\SqRoot-Pas-v101.pas
+		Pas\SqRoot-Pas-v102.pas = Pas\SqRoot-Pas-v102.pas
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JS(1)", "JS\", "{7FD435D9-1A3C-4945-A5E5-3F3B35DA8F75}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51350"
+		Debug.AspNetCompiler.PhysicalPath = "JS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51350\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51350"
+		Release.AspNetCompiler.PhysicalPath = "JS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51350\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51350"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{459FC14B-8AFC-446E-B7C8-1F2294B5A2E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{459FC14B-8AFC-446E-B7C8-1F2294B5A2E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{459FC14B-8AFC-446E-B7C8-1F2294B5A2E6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{459FC14B-8AFC-446E-B7C8-1F2294B5A2E6}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{58DF04CC-AC8E-40AB-A6E5-00FF983EEE65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{58DF04CC-AC8E-40AB-A6E5-00FF983EEE65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7D3EE14-60A3-4419-B712-F1A67EDD314B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -57,6 +66,10 @@ Global
 		{5E576803-1286-4E77-AB57-D5916B1E4A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E576803-1286-4E77-AB57-D5916B1E4A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E576803-1286-4E77-AB57-D5916B1E4A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD435D9-1A3C-4945-A5E5-3F3B35DA8F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD435D9-1A3C-4945-A5E5-3F3B35DA8F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD435D9-1A3C-4945-A5E5-3F3B35DA8F75}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD435D9-1A3C-4945-A5E5-3F3B35DA8F75}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
