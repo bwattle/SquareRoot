@@ -36,4 +36,3 @@ Other GitHub sites useful for HSC students:
 
 * Array of records - 4 languages + a 12 term 1 assessment for the building of a pizza app: Repo: https://github.com/bwattle/arrRecords Web: https://bwattle.github.io/arrRecords/
 
-![image](https://user-images.githubusercontent.com/45184841/135800411-5c71d99b-e4d3-45ea-bbae-f8f12ca34921.png)
