@@ -44,6 +44,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JS(1)", "JS\", "{7FD435D9-1
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "51350"
+		SlnRelativePath = "JS\"
 	EndProjectSection
 EndProject
 Global
